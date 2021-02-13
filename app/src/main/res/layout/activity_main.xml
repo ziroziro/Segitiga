@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Luas Segitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:id="@+id/txt_judul"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Rumus = 1/2 X a X t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt_rumus"
+        android:layout_below="@+id/txt_judul"
+        android:layout_alignLeft="@+id/txt_alas"
+        android:layout_alignStart="@+id/txt_alas"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="Alas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:id="@+id/txt_alas"
+        android:layout_alignBaseline="@+id/alas"
+        android:layout_alignBottom="@+id/alas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <TextView
+        android:text="Tinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_tinggi"
+        android:layout_alignBaseline="@+id/tinggi"
+        android:layout_alignBottom="@+id/tinggi"
+        android:layout_alignLeft="@+id/txt_alas"
+        android:layout_alignStart="@+id/txt_alas"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Masukkan Alas"
+        android:ems="10"
+        android:layout_below="@+id/txt_rumus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/alas" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Massukkan Tinggi"
+        android:ems="10"
+        android:layout_below="@+id/alas"
+        android:layout_alignLeft="@+id/alas"
+        android:layout_alignStart="@+id/alas"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tinggi" />
+
+    <Button
+        android:text="HITUNG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tinggi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/button" />
+
+    <TextView
+
+        android:text="Luas Segitiga Adalah :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:id="@+id/txt_hasil"
+        android:layout_below="@+id/button"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+</RelativeLayout>
